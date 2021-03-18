@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <title>Kalkulačka</title>
+    <link rel="icon" href="https://iconarchive.com/download/i87048/graphicloads/colorful-long-shadow/Calculator.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark text-light">
+    <header class="jumbotron p-5 bg-dark">
+        <h1 class="text-center display-2">Obvody a obsahy</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="text-center bg-secondary p-3 mb-5">Kalkulačka obvodů a obsahů</h2>
+
+            <form class="text-right">
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="shape">Těleso</label>
+                    <div class="col-sm-6">
+
+                        <select class="form-control" name="shape" id="shape">
+                            <option disabled selected value id="rem">Vyberte těleso</option>
+                            <option value="ctverec">Čtverec</option>
+                            <option value="obdelnik">Obdélník</option>
+                            <option value="trojuhelnik">Trojúhelník</option>
+                            <option value="kruh">Kruh</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <div class="row">
+                        <div class="col-sm-6 text-right">
+                            Obvod:
+                        </div>
+                        <div class="col-sm-6 text-left">
+                            <span id="obvod">
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 text-right">
+                            Obsah:
+                        </div>
+                        <div class="col-sm-6 text-left">
+                            <span id="obsah">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer></footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
